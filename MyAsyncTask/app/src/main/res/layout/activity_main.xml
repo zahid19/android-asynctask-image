@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/progressBar"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:max="100"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Click here"
+            android:onClick="startTask"/>
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Click the button and image will start downloading at background using AsyncTask. You can click again to get new images."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="AsyncTask enables proper and easy use of the UI thread. This class allows you to perform background operations and publish results on the UI thread without having to manipulate threads and/or handlers."/>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
